@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>TRABALHANDO COM FORMULÁRIOS</title>
+</head>
+<body>
+<form>
+	<fieldset id="dados_pessoais">
+		<legend>Dados Pessoais</legend>
+	<label for="nome">Nome:</label><br>
+	<input type="text" name="nome" id="nome" required placeholder="Digite seu nome">
+	<br>
+	<label for="email">E-mail:</label><br>
+	<input type="text" name="email" id="email" required placeholder="Ex:seuemail@algummail.com">
+	<br>
+	<label for="nasc">Data de Nascimento: </label><br>
+	<input type="date" name="nasc" id="nasc">
+	<br>
+	<label for="idade">Idade:</label><br>
+	<input type="number" name="idade" id="idade" min="0" max="80">
+	<br>
+	<label for="imagem">Sua foto:</label><br>
+	<input type="file" name="imagem" id="imagem">
+	<br>
+	<label for="senha">Senha:</label><br>
+	<input type="password" name="senha" id="senha">
+	</fieldset>
+	<br>
+	<fieldset id="veiculo">
+		<legend>Modelos de carro</legend>
+	<label for="modelo">Modelo:</label><br>
+	<select name="modelo" id="modelo">
+		<option disabled="disabled" selected>Escolha o modelo</option>
+		<option value="1">Fiat</option>
+		<option value="2">Toyota</option>
+		<option value="3">Mustang</option>
+		<option value="4">Lambo pesada</option>
+	</select>
+	</fieldset>
+	<br>
+	<label for="sexo">Escolha o sexo:</label>
+	<br>
+	<input type="radio" name="sexo" value="m">Masculino<br>
+	<input type="radio" name="sexo" value="f">Feminino<br>
+	<br>
+	<label for="interesses">Escolha seus interesses:</label><br>
+	<input type="checkbox" name="interesse[]" value="musica">Música<br>
+	<input type="checkbox" name="interesse[]" value="filmes">Filme<br>
+	<input type="checkbox" name="interesse[]" value="viagem">Viagem<br>
+	<br>
+	<label for="obs">Escreva algo sobre você:</label>
+	<br>
+	<textarea name="obs" cols="20" lang="5"></textarea>
+	<br>
+	<input type="submit" value="Cadastrar">
+	<br>
+	<button>Cadastrar</button><br>
+</form>
+<style >
+	body{
+		background-color: #708090;
+		font-family: "Arial"
+	}
+	fieldset{
+		width:50%;
+	}
+	#dados_pessoais{
+		background-color: #40E0D0;
+	}
+	#veiculo{
+		background-color: #87CEFA
+	}
+	legend{
+		color:#1C86EE;
+	}
+	label{
+		color:#FF4040;
+		font-size: 12pt;
+	}
+	input[type=text],{
+		color:darkblue;
+	}
+	input[type=text], input[type=number], input[type=date], select{
+		width:50%;
+	}
+
+	input, select{
+		margin-bottom: 5px;
+	}
+	textarea{
+		resize:none;
+		width:52%;
+	}
+
+</style>
+</body>
+</html>

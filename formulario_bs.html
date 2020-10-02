@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TRABALHANDO COM FORMULÁRIO E BOOTSTRAP</title>
+	<!-- CDN DO BOOTSTRAP V4.5-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+	<form class="form-group">
+		<div class="row">
+			<div class="col-sm-6">
+				<label for="nome">Seu nome:</label>
+				<input type="text" class="form-control" placeholder="escreva seu nome" name="nome">
+			</div>
+			<div class="col-sm-3">
+				<label for="data-nasc">Data de Nascimento:</label>
+				<input type="date" name="data-nasc" class="form-control">
+			</div>
+			<div class="col-sm-3">
+				<label for="estado-civil">Estado Civil:</label>
+				<select name="estado-civil" class="form-control">
+					<option disabled="disables" selected>Selecione o estado civil</option>
+					<option value="solteiro">Solteiro</option>
+					<option value="casado">Casado</option>
+					<option value="viuvo">Viúvo</option>
+					<option value="enforcado">Enforcado</option>
+					<option value="lascado">Lascado</option>
+					<option value="nem_sei">Vixi...</option>
+				</select>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-sm-6">
+				<label for="endereco">Endereço:</label>
+				<input type="text" class="form-control" placeholder="digite seu endereço" name="endereco">
+			</div>
+			<div class="col-sm-6">
+				<label for="complemento">Complemento:</label>
+				<input type="text" class="form-control" placeholder="complemento" name="complemento">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-sm-4">
+				<label for="fone-fixo">Telefone Fixo:</label>
+				<input type="text" name="fone-fixo" class="form-control" placeholder="fone fixo">
+			</div>
+			<div class="col-sm-4">
+				<label for="celular1">Celular:</label>
+				<input type="text" name="celular1" class="form-control" placeholder="celular">
+			</div>
+			<div class="col-sm-4">
+				<label for="celular2">Celular:</label>
+				<input type="text" name="celular2" class="form-control" placeholder="celular">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-sm-1 offset-4">
+				<input type="submit" class="btn btn-success btn-lg" value="Enviar">
+			</div>
+			<div class="col-sm-1">
+				<input type="submit" class="btn btn-danger btn-lg" value="Enviar">
+			</div>
+			<div class="col-sm-1">
+				<input type="submit" class="btn btn-warning btn-lg" value="Enviar">
+			</div>
+			<div class="col-sm-1">
+				<input type="submit" class="btn btn-primary btn-lg" value="Enviar">
+			</div>
+			<div class="col-sm-1">
+				<input type="submit" class="btn btn-info btn-lg" value="Enviar">
+			</div>
+			<div class="col-sm-1">
+				<input type="submit" class="btn btn-default btn-lg" value="Enviar">
+			</div>
+			<div class="col-sm-1">
+				<input type="submit" class="btn btn-secondary btn-lg" value="Enviar">
+			</div>
+			<div class="col-sm-1">
+				<input type="submit" class="btn btn-dark btn-lg" value="Enviar">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-sm-1 offset-4">
+				<input type="submit" class="btn btn-success btn-md" value="Enviar">
+			</div>
+			<div class="col-sm-1">
+				<input type="submit" class="btn btn-danger btn-md" value="Enviar">
+			</div>
+			<div class="col-sm-1">
+				<input type="submit" class="btn btn-warning btn-md" value="Enviar">
+			</div>
+			<div class="col-sm-1">
+				<input type="submit" class="btn btn-primary btn-md" value="Enviar">
+			</div>
+			<div class="col-sm-1">
+				<input type="submit" class="btn btn-info btn-md" value="Enviar">
+			</div>
+			<div class="col-sm-1">
+				<input type="submit" class="btn btn-default btn-md" value="Enviar">
+			</div>
+			<div class="col-sm-1">
+				<input type="submit" class="btn btn-secondary btn-md" value="Enviar">
+			</div>
+			<div class="col-sm-1">
+				<input type="submit" class="btn btn-dark btn-md" value="Enviar">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-sm-1 offset-4">
+				<input type="submit" class="btn btn-success btn-sm" value="Enviar">
+			</div>
+			<div class="col-sm-1">
+				<input type="submit" class="btn btn-danger btn-sm" value="Enviar">
+			</div>
+			<div class="col-sm-1">
+				<input type="submit" class="btn btn-warning btn-sm" value="Enviar">
+			</div>
+			<div class="col-sm-1">
+				<input type="submit" class="btn btn-primary btn-sm" value="Enviar">
+			</div>
+			<div class="col-sm-1">
+				<input type="submit" class="btn btn-info btn-sm" value="Enviar">
+			</div>
+			<div class="col-sm-1">
+				<input type="submit" class="btn btn-default btn-sm" value="Enviar">
+			</div>
+			<div class="col-sm-1">
+				<input type="submit" class="btn btn-secondary btn-sm" value="Enviar">
+			</div>
+			<div class="col-sm-1">
+				<input type="submit" class="btn btn-dark btn-sm" value="Enviar">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-sm-1 offset-4">
+				<input type="submit" class="btn btn-outline-success btn-lg" value="Enviar">
+			</div>
+			<div class="col-sm-1">
+				<input type="submit" class="btn btn-outline-danger btn-lg" value="Enviar">
+			</div>
+			<div class="col-sm-1">
+				<input type="submit" class="btn btn-outline-warning btn-lg" value="Enviar">
+			</div>
+			<div class="col-sm-1">
+				<input type="submit" class="btn btn-outline-primary btn-lg" value="Enviar">
+			</div>
+			<div class="col-sm-1">
+				<input type="submit" class="btn btn-outline-info btn-lg" value="Enviar">
+			</div>
+			<div class="col-sm-1">
+				<input type="submit" class="btn btn-outline-default btn-lg" value="Enviar">
+			</div>
+			<div class="col-sm-1">
+				<input type="submit" class="btn btn-outline-secondary btn-lg" value="Enviar">
+			</div>
+			<div class="col-sm-1">
+				<input type="submit" class="btn btn-outline-dark btn-lg" value="Enviar">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-sm-1 offset-4">
+				<input type="submit" class="btn btn-outline-success btn-md" value="Enviar">
+			</div>
+			<div class="col-sm-1">
+				<input type="submit" class="btn btn-outline-danger btn-md" value="Enviar">
+			</div>
+			<div class="col-sm-1">
+				<input type="submit" class="btn btn-outline-warning btn-md" value="Enviar">
+			</div>
+			<div class="col-sm-1">
+				<input type="submit" class="btn btn-outline-primary btn-md" value="Enviar">
+			</div>
+			<div class="col-sm-1">
+				<input type="submit" class="btn btn-outline-info btn-md" value="Enviar">
+			</div>
+			<div class="col-sm-1">
+				<input type="submit" class="btn btn-outline-default btn-md" value="Enviar">
+			</div>
+			<div class="col-sm-1">
+				<input type="submit" class="btn btn-outline-secondary btn-md" value="Enviar">
+			</div>
+			<div class="col-sm-1">
+				<input type="submit" class="btn btn-outline-dark btn-md" value="Enviar">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-sm-1 offset-4">
+				<input type="submit" class="btn btn-outline-success btn-sm" value="Enviar">
+			</div>
+			<div class="col-sm-1">
+				<input type="submit" class="btn btn-outline-danger btn-sm" value="Enviar">
+			</div>
+			<div class="col-sm-1">
+				<input type="submit" class="btn btn-outline-warning btn-sm" value="Enviar">
+			</div>
+			<div class="col-sm-1">
+				<input type="submit" class="btn btn-outline-primary btn-sm" value="Enviar">
+			</div>
+			<div class="col-sm-1">
+				<input type="submit" class="btn btn-outline-info btn-sm" value="Enviar">
+			</div>
+			<div class="col-sm-1">
+				<input type="submit" class="btn btn-outline-default btn-sm" value="Enviar">
+			</div>
+			<div class="col-sm-1">
+				<input type="submit" class="btn btn-outline-secondary btn-sm" value="Enviar">
+			</div>
+			<div class="col-sm-1">
+				<input type="submit" class="btn btn-outline-dark btn-sm" value="Enviar">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-sm-12">
+				<input type="submit" class="btn btn-success btn-block" value="Enviar">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-sm-12">
+				<input type="submit" class="btn btn-outline-success btn-block" value="Enviar">
+			</div>
+		</div>
+	</form>
+</div>
+</body>
+</html>
